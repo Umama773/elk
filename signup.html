@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Exchange Rate, Currency Rate & Free Forex API | ELK Layer</title>
+
+    <link rel="shortcut icon" href="./assest/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/scss/style.css">
+    <link rel="stylesheet" href="./assest/css/custom.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <header class="">
+            <nav class="navbar navbar-expand-lg  d-flex align-items-center w-100 h-100">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler border-none border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <!--  -->
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        API Documentation <i class="fa-solid fa-chevron-down"
+                                            style="-webkit-text-stroke-width: 2px; font-size: 10px;"></i>
+                                    </a>
+                                    <ul class="dropdown-menu shadow ">
+                                        <li><a class="dropdown-item" href="Forex.html">Forex API</a></li>
+                                        <li><a class="dropdown-item" href="Crypto.html">Crypto API</a></li>
+                                        <li><a class="dropdown-item" href="Stock.html">Stock API</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                            </ul>
+                            <a href="signin.html" class="btn btn-white">Sign in</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </nav>
+        </header>
+        <div class="main-container">
+            <section class="single-banner background sign-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="contant">
+                                <h2 class="">Sign up</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb gap-3">
+                                        <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
+                                        <li>/</li>
+                                        <li class="breadcrumb-item active text-white" aria-current="page">Sign up</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact default-sec">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="./assest/images/3d img/signup.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card bg-dark rounded-custom icon-form">
+                                <div class="card-body">
+                                    <h2 class="sub-heading mb-4 text-center">Sign Up</h2>
+                                    <form action="" id="signup">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="input-wrapper">
+                                                    <i class="fa-solid fa-user text-dark input-icon fs-5"></i>
+                                                    <input type="text" class="form-control" name="fname"
+                                                        placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-wrapper">
+                                                    <i class="fa-solid fa-user text-dark input-icon fs-5"></i>
+                                                    <input type="text" class="form-control" name="lname"
+                                                        placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-wrapper">
+                                                    <i class="fa-solid fa-envelope text-dark input-icon fs-5"></i>
+                                                    <input type="email" class="form-control" name="email"
+                                                        placeholder="Email Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-wrapper">
+                                                    <i class="fa-solid fa-key text-dark input-icon fs-5"></i>
+                                                    <input type="password" class="form-control" name="password"
+                                                        placeholder="Password">
+                                                    <i
+                                                        class="fa-solid fa-eye text-dark toggle-password eye-icon fs-5 "></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-wrapper">
+                                                    <i class="fa-solid fa-check text-dark input-icon fs-5"></i>
+                                                    <input type="password" class="form-control" name="password"
+                                                        placeholder="Password">
+                                                    <i
+                                                        class="fa-solid fa-eye text-dark toggle-password eye-icon fs-5 "></i>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-white" type="submit">Submit</button>
+                                        </div>
+                                        <div class="text-end my-3">
+                                            <small>Don't have an Account ?&nbsp; <a href="signin.html"
+                                                    class="text-danger fw-bold">Sign In</a></small>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-wrapper">
+                            <div class="imag-wrapper mb-3">
+                                <img class="img-fluid footer-logo" src="./assest/images/icons/logo.svg" alt="">
+                            </div>
+                            <p class="text">Elk Layer is a trusted API of the Forex industry with Real-time and accurate
+                                historical data worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-wrapper mt-5">
+                            <h5 class="footer-title">Docs & Help</h5><br>
+                            <a href="Forex.html" class="text">Forex Doc API</a> <br>
+                            <a href="Crypto.html" class="text">Crypto Doc API</a> <br>
+                            <a href="Stock.html" class="text">Stock Doc API</a> <br>
+                            <a href="Error.html" class="text">Code Base</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-wrapper mt-5">
+                            <h5 class="footer-title">Get in Touch</h5> <br>
+                            <a href="contact.html" class="text">Contact us</a> <br>
+                            <a href="About.html" class="text">About us</a> <br>
+                            <a href="Privacy.html" class="text">Privacy Policy</a> <br>
+                            <a href="Terms.html" class="text">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="./assest/js/custom.js"></script>
+</body>
+
+</html>

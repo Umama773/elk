@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Exchange Rate, Currency Rate & Free Forex API | ELK Layer</title>
+    <meta name="description"
+        content="Elk Layer is a simple lightweight &amp; fast API. Providing access to Foreign Exchange Rate, Currency Rate &amp; Free forex API with Secure JSON API.">
+    <meta property="og:title" content="Foreign Exchange Rate, Currency Rate &amp; Free Forex API | ELK Layer">
+    <meta property="og:description"
+        content="Elk Layer is a simple lightweight &amp; fast API. Providing access to Foreign Exchange Rate, Currency Rate &amp; Free forex API with Secure JSON API.">
+    <meta property="og:url" content="https://elklayer.com//">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://elklayer.com/assets/images/logo.svg">
+    <meta name="twitter:image" content="https://elklayer.com/assets/images/logo.svg">
+    <meta property="og:image:alt" content="Foreign Exchange Rate, Currency Rate &amp; Free Forex API | ELK Layer">
+    <meta name="twitter:card" content="website">
+    <meta property="twitter:url" content="https://elklayer.com//">
+    <meta name="twitter:title" content="Foreign Exchange Rate, Currency Rate &amp; Free Forex API | ELK Layer">
+    <meta name="twitter:description"
+        content="Elk Layer is a simple lightweight &amp; fast API. Providing access to Foreign Exchange Rate, Currency Rate &amp; Free forex API with Secure JSON API.">
+    <meta name="google-site-verification" content="vQZIb-P3A8iQPchUtNb_UEJjsARhnWPLoLGEgp28B3c">
+
+    <link rel="shortcut icon" href="./assest/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/scss/style.css">
+    <link rel="stylesheet" href="./assest/css/custom.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="">
+            <nav class="navbar navbar-expand-lg  d-flex align-items-center w-100 h-100">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler border-none border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <!--  -->
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        API Documentation <i class="fa-solid fa-chevron-down"
+                                            style="-webkit-text-stroke-width: 2px; font-size: 10px;"></i>
+                                    </a>
+                                    <ul class="dropdown-menu shadow ">
+                                        <li><a class="dropdown-item" href="Forex.html">Forex API</a></li>
+                                        <li><a class="dropdown-item" href="Crypto.html">Crypto API</a></li>
+                                        <li><a class="dropdown-item" href="Stock.html">Stock API</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                            </ul>
+                            <a href="signin.html" class="btn btn-white">Sign in</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </nav>
+        </header>
+        <div class="main-container">
+            <div class="container">
+                <section class="news-hero default-sec">
+                    <div class="row">
+                        <div class="col-lg-7 mb-lg-0 mb-3">
+                            <div class="news-card">
+                                <div class="new-image">
+                                    <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                </div>
+                                <div class="news-content-top d-flex w-100">
+                                    <div class="">
+                                        <i class="fa-solid fa-bolt icon card-icon-img rounded-0 p-3 fs-5"></i>
+                                    </div>
+                                    <div class="ms-auto pe-3">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <h3 class="small-heading-content">Ranking toop available 2019 NBA free agents (with possible star landing spots)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="bg-dark p-2 rounded">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="img-fluid h-100" src="./assest/images/news/main-img.webp" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita impedit quasi perferendis modi dolorum sunt illo nam quibusdam quisquam? Amet dolores dignissimos placeat error minus ut, quam aperiam aliquam!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="bg-dark p-2 rounded">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="img-fluid h-100" src="./assest/images/news/main-img.webp" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita impedit quasi perferendis modi dolorum sunt illo nam quibusdam quisquam? Amet dolores dignissimos placeat error minus ut, quam aperiam aliquam!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="bg-dark p-2 rounded">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="img-fluid h-100" src="./assest/images/news/main-img.webp" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita impedit quasi perferendis modi dolorum sunt illo nam quibusdam quisquam? Amet dolores dignissimos placeat error minus ut, quam aperiam aliquam!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="bg-dark p-2 rounded">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="img-fluid h-100" src="./assest/images/news/main-img.webp" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita impedit quasi perferendis modi dolorum sunt illo nam quibusdam quisquam? Amet dolores dignissimos placeat error minus ut, quam aperiam aliquam!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news-wrapper default-sec">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="btn btn-white">WORLD NEWS</div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="">WATCH THE LATEST NEWS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 my-5">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <input type="text" class="h-100 w-75 form-control border-0 rounded-0" id="filtersearch" placeholder="Enter Text to Search">
+                                <button class="btn btn-white h-100 rounded-0" >Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-wrapper" id="list">
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto Bro Charters Private SpaceX Mission to Earth’s Poles</h2>
+                                                <p class="text">Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts. <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Passant Rabie - 1 week ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-2.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Trump's Crypto Embrace Could Be a Disaster for Bitcoin</h2>
+                                                <p class="text">At the Bitcoin 2024 conference in Nashville, Donald Trump promised the crypto community the moon. They'd better hope they don't get it <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Steven Levy - 2 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-3.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">US strategic Bitcoin reserve to be financed by revaluing Fed’s gold</h2>
+                                                <p class="text">United States’ strategic Bitcoin (BTC) reserve would be partly financed by revaluing gold certificates held by the Federal Reserve System,… Continue reading US strategic Bitcoin reserve to be financed by revaluing Fed’s gold The post US strategic Bitcoin rese… <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-4.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Donald Trump raises $25M during Bitcoin 2024 conference</h2>
+                                                <p class="text">Republican presidential candidate Donald Trump raised $25 million during the The Bitcoin 2024 conference. Fox Business reporter Eleanor Terrett announced that… Continue reading Donald Trump <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-5.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto asset firm Grayscale has lost $20 billion in Bitcoin and Ethereum</h2>
+                                                <p class="text">Leading crypto-specific asset manager Grayscale Investments has lost over $20.4 billion through outflows from its Bitcoin (BTC) and Ethereum (ETH)… Continue reading Crypto asset firm Grayscale has lost $20 <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-6.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Trump fights for the crypto vote at Bitcoin conference</h2>
+                                                <p class="text">At the Bitcoin 2024 conference in Nashville, Tennessee, former President Donald Trump delivered a keynote speech. Trump, the Republican presidential… Continue reading Trump fights for the crypto vote at <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-7.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Bitcoin Bros Go Wild for Donald Trump</h2>
+                                                <p class="text">At Bitcoin 2024 conference in Nashville, Trump is finally telling crypto enthusiasts what they want to hear. <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Jessica Klein - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-8.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Trump Promises to Make U.S. the ‘Crypto Capital of the Planet and the</h2>
+                                                <p class="text">The former president drew cheers at the 2024 Bitcoin Conference after saying he'll "fire" Biden-nominated SEC Chair Gary Gensler. <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Harri Weber - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-9.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">RFK Jr. Says He'd Direct the Government to Buy $615 Billion in Bitcoin or 4 Millio</h2>
+                                                <p class="text">US presidential candidate, Robert F. Kennedy Jr., announced during his keynote Friday at the Bitcoin Conference that he would direct the US government to buy Bitcoin until the size of its Bitcoin reserves matched its gold reserves. At current <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Slashdot Staff - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-10.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Jersey City Pension Fund to Invest in Bitcoin ETFs</h2>
+                                                <p class="text">Jersey City Mayor Steven Fulop announced on Thursday that the city’s municipal pension plan will soon invest in Bitcoin (BTC)… Continue reading Jersey City Pension Fund to Invest in Bitcoin ETFs The post <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 3 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-11.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Mt. Gox Moves Another $2.5B of Bitcoin</h2>
+                                                <p class="text">Mt. Gox, the defunct cryptocurrency exchange, has transferred 37,477 Bitcoin (BTC), valued at approximately $2.5 billion, to an unidentified wallet… Continue reading Mt. Gox Moves Another $2.5B of <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 4 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/new-12.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Bitcoin surges past $68,000 amid continued ETF inflows</h2>
+                                                <p class="text">Bitcoin (BTC) breached the $68,000 resistance level during Sunday night trading in Eastern Standard Time, continuing its upward trajectory. According… Continue reading Bitcoin surges past $68,000 amid continued ETF inflows The post Bitcoin surges past $68,000… Read More... <a href="#">Read More</a></p>
+                                                <p class="news-small-text text-gray">By Radek Zielinski - 4 weeks ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news-wrapper default-sec">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="btn btn-white">WORLD NEWS</div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="">WATCH THE LATEST NEWS</div>
+                    </div>
+                    <div class="news-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto Bro Charters Private SpaceX Mission to Earth’s Poles</h2>
+                                                <p class="text">Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts</p>
+                                                <p class="news-small-text text-gray">By Passant Rabie - 1 week ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto Bro Charters Private SpaceX Mission to Earth’s Poles</h2>
+                                                <p class="text">Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts</p>
+                                                <p class="news-small-text text-gray">By Passant Rabie - 1 week ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto Bro Charters Private SpaceX Mission to Earth’s Poles</h2>
+                                                <p class="text">Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts</p>
+                                                <p class="news-small-text text-gray">By Passant Rabie - 1 week ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="card shadow">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="card-img">
+                                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h2 class="heading">Crypto Bro Charters Private SpaceX Mission to Earth’s Poles</h2>
+                                                <p class="text">Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts</p>
+                                                <p class="news-small-text text-gray">By Passant Rabie - 1 week ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="default-sec">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="btn btn-white">WORLD NEWS</div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="">WATCH THE LATEST NEWS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-6 mb-lg-0 mb-3">
+                            <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 mb-lg-0 mb-3">
+                            <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 mb-lg-0 mb-3">
+                            <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 mb-lg-0 mb-3">
+                            <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="default-sec">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="btn btn-white">WORLD NEWS</div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="">WATCH THE LATEST NEWS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="card bg-dark">
+                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                <div class="card-body px-0">
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugiat quis consequuntur unde quae nesciunt magni laudantium vitae hic dolore minus libero, atque consectetur possimus non repellendus porro amet. Dolores?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="card bg-dark">
+                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                <div class="card-body px-0">
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugiat quis consequuntur unde quae nesciunt magni laudantium vitae hic dolore minus libero, atque consectetur possimus non repellendus porro amet. Dolores?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="card bg-dark">
+                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                <div class="card-body px-0">
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugiat quis consequuntur unde quae nesciunt magni laudantium vitae hic dolore minus libero, atque consectetur possimus non repellendus porro amet. Dolores?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                            <div class="card bg-dark">
+                                <img class="img-fluid" src="./assest/images/news/main-img.webp" alt="">
+                                <div class="card-body px-0">
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugiat quis consequuntur unde quae nesciunt magni laudantium vitae hic dolore minus libero, atque consectetur possimus non repellendus porro amet. Dolores?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="py-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-wrapper">
+                            <div class="imag-wrapper mb-3">
+                                <img class="img-fluid footer-logo" src="./assest/images/icons/logo.svg" alt="">
+                            </div>
+                            <p class="text">Elk Layer is a trusted API of the Forex industry with Real-time and accurate
+                                historical data worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-wrapper mt-5">
+                            <h5 class="footer-title">Docs & Help</h5><br>
+                            <a href="Forex.html" class="text">Forex Doc API</a> <br>
+                            <a href="Crypto.html" class="text">Crypto Doc API</a> <br>
+                            <a href="Stock.html" class="text">Stock Doc API</a> <br>
+                            <a href="Error.html" class="text">Code Base</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-wrapper mt-5">
+                            <h5 class="footer-title">Get in Touch</h5> <br>
+                            <a href="contact.html" class="text">Contact us</a> <br>
+                            <a href="About.html" class="text">About us</a> <br>
+                            <a href="Privacy.html" class="text">Privacy Policy</a> <br>
+                            <a href="Terms.html" class="text">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/jquery.js"></script>
+    <script src="./assest/js/custom.js"></script>
+
+</body>
+</html>

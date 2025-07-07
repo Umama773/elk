@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foreign Exchange Rate, Currency Rate & Free Forex API | ELK Layer</title>
+
+  <link rel="shortcut icon" href="./assest/images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assest/scss/style.css">
+  <link rel="stylesheet" href="./assest/css/custom.css">
+</head>
+
+<body>
+  <div class="main">
+    <header class="">
+      <nav class="navbar navbar-expand-lg  d-flex align-items-center w-100 h-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+          </a>
+          <button class="navbar-toggler border-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <!--  -->
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./assest/images/icons/logo.svg" alt="">
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    API Documentation <i class="fa-solid fa-chevron-down"
+                      style="-webkit-text-stroke-width: 2px; font-size: 10px;"></i>
+                  </a>
+                  <ul class="dropdown-menu shadow ">
+                    <li><a class="dropdown-item" href="Forex.html">Forex API</a></li>
+                    <li><a class="dropdown-item" href="Crypto.html">Crypto API</a></li>
+                    <li><a class="dropdown-item" href="Stock.html">Stock API</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+              </ul>
+              <a href="signin.html" class="btn btn-white">Sign in</a>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </nav>
+    </header>
+    <div class="main-container">
+      <section class="document">
+        <div class="container">
+          <div class="row ">
+            <div class="col">
+              <div class="doc-menu">
+                <div class="d-block d-lg-flex justify-content-start my-5 tab-list gap-3">
+                  <div class="fs-6 rounded-pill bg-dark text-white py-2 px-4 fw-bold mb-lg-0 mb-2"><a href="Forex.html">Forex</a>
+                  </div>
+                  <div class="fs-6 rounded-pill bg-dark text-white py-2 px-4 fw-bold mb-lg-0 mb-2"><a href="Crypto.html">Crypto</a>
+                  </div>
+                  <div class="fs-6 rounded-pill bg-dark text-white py-2 px-4 fw-bold mb-lg-0 mb-2"><a href="Stock.html">Stock</a>
+                  </div>
+                  <div class="fs-6 rounded-pill bg-dark text-white py-2 px-4 fw-bold mb-lg-0 mb-2"><a href="Error.html">Error</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="tab-stiky">
+                <ul class="p-0">
+                  <li><a href="#CryptoAPI">Crypto API</a></li>
+                  <li><a href="#Parameters">Parameters</a></li>
+                  <li><a href="#CryptoPairsList">Crypto Pairs List</a></li>
+                  <li><a href="#PairDetails">Pair Details</a></li>
+                  <li><a href="#LatestPrice">Latest Price</a></li>
+                  <li><a href="#basiccurrency">Basic Currency</a></li>
+                  <li><a href="#historicalprice">Historical Price</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="tab-detail">
+                <div id="CryptoAPI" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">Crypto API</h2>
+                      <p class="text">
+                        Elk Layer API provides you with an entire analysis of the international market where you can
+                        track the volume and prices. It’s one of the best platforms which provide reliable, fast and
+                        unified data information of all crypto currencies markets. Elk Layer API is a one stop
+                        currencies market data with high quality information; we provide you the access to your entire
+                        database with history of market data. It’s highly scalable and suitable for all users with a
+                        highly loadable system. If you want to avail all the recent prices of currencies, market
+                        supplies, crypto technical indicators volume, with historical data.
+                      </p>
+                      <p class="text">
+                        A wide number of developers are using this Elk Layer API, the easiest and user friendly. You can
+                        install a server by utilizing the different API to get live-time Data information just like
+                        currency converters to check the most recent rates and it sounds like the most significant API
+                        we have offered you now.
+                      </p>
+                    </div>
+                    <div class="col-lg-4"></div>
+                  </div>
+                </div>
+                <div id="Parameters" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading mb-3">Parameters and their use</h2>
+                      <!-- table -->
+                      <table class="table table-dark">
+                        <thead>
+                          <tr class="bg-dark">
+                            <th scope="col">
+                              Parameter</th>
+                            <th scope="col">Usage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">ID</th>
+                            <td>
+                              Set pair ID in parameter value to get your required pair data. <br>
+                              <b>Default:</b> none. Example: id=1,2,3... etc, <br>
+                              To get all list of Pair ID's or Pair short name use "Pair List API".
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Symbol</th>
+                            <td>
+                              You can use currency pair name, instant of ID when you need.<br>
+                              <b>Default:</b> none. <br>
+                              <b>Example:</b> symbol=EURUSD,USDJPY,GBPNZD etc,<br> <br>
+                              <b>Note:</b> When you use ID and symbol parameter, than symbol param will be ignored.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Category</th>
+                            <td>
+                              Category is used to get all paris in specific stock category, to get all stock pairs, use
+                              category=stock<br>
+                              <b>Default:</b> none.<br>
+                              <b>Valid values:</b> forex, crypto, stock
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Period</th>
+                            <td>
+                              To get specifi time period history or candle prices, use the period parameter<br>
+                              <b>Default:</b> 1h<br>
+                              <b>Valid Values:</b> 1m,5m,15m,30m,1h,2h,4h,1d,1w,month<br>
+                              <b>Alternate: </b> 1,5,15,30,60,120,240,1440,10080,43200<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">From</th>
+                            <td>
+                              When you need history data of specific date. <br>
+                              <b>Default:</b> none. Example: id=1,2,3... etc, <br>
+                              <b>Format:</b> YYYY-MM-DD E.g: 2024-07-06 <br>
+                              <b>OR:</b> YYYY-MM-DD Hour:Min E.g: 2024-07-06 07:07
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">To</th>
+                            <td>
+                              When you need history data of specific date. <br>
+                              <b>Default:</b> none. <br>
+                              <b>Format:</b>YYYY-MM-DD E.g: 2024-07-06 <br>
+                              <b>TO:</b>YYYY-MM-DD Hour:Min E.g: 2024-07-06 07:07 <br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Candle</th>
+                            <td>
+                              Latest Rates API return last 2 candles of each pair, so you can filter, which candle you
+                              need.
+                              A previous closed candle, or current active candle prices. <br>
+                              <b>Default:</b> active <br>
+                              <b>Values:</b> active, close, both <br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Output</th>
+                            <td>
+                              Set your API response format. <br>
+                              <b>Default:</b>JSON <br>
+                              <b>Valid Values:</b>JSON, JSONP, object, XML, serialize and array
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-lg-4"></div>
+                  </div>
+                </div>
+                <div id="CryptoPairsList" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">Available Pairs List</h2>
+                      <p class="text">
+                        This API will return all available stock pairs list that we have in our database. First you need
+                        to
+                        use this api to get all IDs and pairs name to use in other APIs.
+                      </p>
+                      <div class="small-text">
+                        <b>Accepted Params:</b>
+                        <p>category = crypto</p>
+                        <p>auth_key = AUTH_KEY</p>
+                      </div>
+                      <div class="small-text">
+                        <p class="mb-2"><b>API:</b></p>
+                        <p class="text">Return All crypto currency symbols list.</p>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/list?<span class="yellow">category</span>=<span class="off-white">crypto</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="tab-stiky">
+                        <p class="mb-2"><b>Response:</b></p>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5 font-size-13"><code><span class="off-white">{</span><br>&nbsp;&nbsp;"id"<span class="off-white">:&nbsp;</span><span class="yellow">2176</span><span class="off-white">,</span><br>&nbsp;&nbsp;"name"<span class="off-white">:&nbsp;</span><span class="yellow">"Bitcoin ($)"</span><span class="off-white">,</span><br>&nbsp;&nbsp;"symbol"<span class="off-white">:&nbsp;</span><span class="yellow">"Bitcoin"</span><span class="off-white">,</span><br>&nbsp;&nbsp;"category"<span class="off-white">:&nbsp;</span><span class="yellow">"crypto"</span><span class="off-white">,</span><br>&nbsp;&nbsp;"type"<span class="off-white">:&nbsp;</span><span class="yellow">"crypto"</span><span class="off-white">,</span><br>&nbsp;&nbsp;"decimal"<span class="off-white">:&nbsp;</span><span class="yellow">1</span><span class="off-white">,</span> <span class="comm">// No of decimals in price</span><br>&nbsp;&nbsp;"points"<span class="off-white">:&nbsp;</span><span class="yellow">"0.1"</span><span class="off-white">,</span> <span class="comm">// smallest price unit of currency</span><br>&nbsp;&nbsp;"base"<span class="off-white">:&nbsp;</span><span class="yellow">"USD"</span><span class="off-white">,</span> <span class="comm">// Base Currency</span><br>&nbsp;&nbsp;"quote"<span class="off-white">:&nbsp;</span><span class="yellow">"USD"</span> <span class="comm">// Quote Currency</span><br><span class="off-white">},<br></span><span class="off-white">{and more...},</span></code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Pair Details" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">Crypto Pair Details</h2>
+                      <p class="text">
+                        Get pair profile details such as id, name, decimals, Trading times, bank, country
+                      </p>
+                      <div class="small-text">
+                        <b>Accepted Params:</b>
+                        <pre class="bg-dark rounded py-2 px-3">
+                      <code>
+id = {any valid ID}
+symbol = {any valid short name}
+category = major,exotic,minor
+auth_key = AUTH_KEY
+                      </code>
+                    </pre>
+                        <br>
+                        <b>Profile by IDs</b>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/profile?<span class="yellow">id</span>=<span class="off-white">2176,2177,2178</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                        <br>
+                        <b>By Symbol Combination:</b>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/profile?<span class="yellow">symbol</span>=<span class="off-white">Bitcoin,Ethereum</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                        <br>
+                        <b>By Currency Short Name:</b>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/profile?<span class="yellow">category</span>=<span class="off-white">crypto</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="tab-stiky">
+                        <p class="mb-2"><b>Response:</b></p>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5 font-size-13"><code><span class="off-white">{</span> <span class="comm">//Crypto Currency Profile</span><br>&nbsp; "id" <span class="off-white">: <span class="yellow">2176</span>,</span><br>&nbsp; "short_name" <span class="off-white">: <span class="yellow">"Bitcoin"</span>,</span><br>&nbsp; "name" <span class="off-white">: <span class="yellow">"Bitcoin ($)"</span>,</span><br>&nbsp; "status" <span class="off-white">: <span class="yellow">1</span>,</span><br>&nbsp; "decimals" <span class="off-white">: <span class="yellow">1</span>,</span><br>&nbsp; "points" <span class="off-white">: <span class="yellow">"0.1"</span>,</span><br>&nbsp; "base_curr" <span class="off-white">: <span class="yellow">"USD"</span>,</span><br>&nbsp; "quote_curr" <span class="off-white">: <span class="yellow">"USD"</span>,</span><br>&nbsp; "category" <span class="off-white">: <span class="yellow">"crypto"</span>,</span><br>&nbsp; "type" <span class="off-white">: <span class="yellow">"crypto"</span>,</span><br>&nbsp; "trading_days" <span class="off-white">: [<span class="yellow">"..."</span>],</span><br><span class="off-white">},</span><br>{and more...},</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="LatestPrice" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">Currency Latest Price</h2>
+                      <p class="small-text">
+                        Crypto latest price API is very useful, you must have to get in touch with the updated price of
+                        a currency That's why the latest prices are included in any API which is the most common part.
+                        We provide one or multiple currency prices at the same time, To do so, you just have to send the
+                        request with symbols parameter in API request and set it to one or more comma-separated codes of
+                        a currency.
+                        <br>
+                        <b>Note:</b>
+                        We update the prices of each currency in every 30 seconds or less.
+                        And use Last Candle API if you need time frame latest price, like 5m,1h,1week candle price.
+                      </p>
+                      <pre class="small-text bg-dark py-2 px-3">
+<b>Accepted Parameters :</b>
+id = {Any valid FX ID}
+symbol = {Any valid FX symbol}
+period = {Any valid period}
+candle = {active,close,both}
+category = {Any valid category}
+auth_key = AUTH_KEY
+                  </pre>
+                      <p class="small-text">
+                        <b>Request Credit Usage:</b>1 credit count for each 100 record returned (rounded up).
+                        <b>Price of one id:</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/latest?<span class="yellow">id</span>=<span class="off-white">2176</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p class="small-text">
+                        <b>Multiple prices by ids:</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/latest?<span class="yellow">id</span>=<span class="off-white">2176,2177,2178</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p class="small-text">
+                        <b>Prices by candle:</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/latest?<span class="yellow">candle</span>=<span class="off-white">active</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="tab-stiky">
+                        <p class="mb-2"><b>Response:</b></p>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5 font-size-13"><code><span class="off-white">{</span><br>&nbsp;&nbsp;"id"<span class="off-white">:&nbsp;</span>2176<span class="off-white">,</span><br>&nbsp;&nbsp;"s"<span class="off-white">:&nbsp;</span><span class="yellow">"Bitcoin"</span><span class="off-white">,</span><span class="comm"> // Symbol</span><br>&nbsp;&nbsp;"o"<span class="off-white">:&nbsp;</span><span class="yellow">"1.18000"</span><span class="off-white">,</span><span class="comm"> // Open</span><br>&nbsp;&nbsp;"h"<span class="off-white">:&nbsp;</span><span class="yellow">"1.18038"</span><span class="off-white">,</span><span class="comm"> // High</span><br>&nbsp;&nbsp;"l"<span class="off-white">:&nbsp;</span><span class="yellow">"1.17972"</span><span class="off-white">,</span><span class="comm"> // Low</span><br>&nbsp;&nbsp;"c"<span class="off-white">:&nbsp;</span><span class="yellow">"1.18027"</span><span class="off-white">,</span><span class="comm"> // Price/Close, Current price</span><br>&nbsp;&nbsp;"a"<span class="off-white">:&nbsp;</span><span class="yellow">"1.18038"</span><span class="off-white">,</span><span class="comm"> // Ask</span><br>&nbsp;&nbsp;"b"<span class="off-white">:&nbsp;</span><span class="yellow">"1.18016"</span><span class="off-white">,</span><span class="comm"> // Bid</span><br>&nbsp;&nbsp;"sp"<span class="off-white">:&nbsp;</span><span class="yellow">"2.2"</span><span class="off-white">,</span><span class="comm"> // Spread</span><br>&nbsp;&nbsp;"ch"<span class="off-white">:&nbsp;</span><span class="yellow">"+0.0002"</span><span class="off-white">,</span><span class="comm"> // Change in 1 day candle</span><br>&nbsp;&nbsp;"cp<span class="off-white">:&nbsp;</span><span class="yellow">"+0.02%</span><span class="off-white">,</span><span class="comm"> // Change in percentage</span><br>&nbsp;&nbsp;"v"<span class="off-white">:&nbsp;</span><span class="yellow">"64124"</span><span class="off-white">,</span><span class="comm"> // Volume</span><br>&nbsp;&nbsp;"t"<span class="off-white">:&nbsp;</span><span class="yellow">"1596575732"</span><span class="off-white">,</span><span class="comm"> // When update last time Time Unix Format (UTC)</span><br>&nbsp;&nbsp;"tm"<span class="off-white">:&nbsp;</span><span class="yellow">"2020-08-04 21:15:03"</span><span class="off-white">,</span><span class="comm"> // When update last time (UTC)</span><br>&nbsp;&nbsp;"up"<span class="off-white">:&nbsp;</span><span class="yellow">"2020-08-04 21:14:30"</span><span class="off-white">,</span><br><span class="off-white">},<br>{</span>and more...<span class="off-white">},</span></code></pre>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="basiccurrency" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">Base Currency</h2>
+                      <p class="text">
+                        On the base of 1 currency, it will return all quote prices of all available currencies.
+                      </p>
+                      <div class="">
+                        <b>Accepted Parameters :</b>
+                        <pre class="bg-dark rounded py-2 px-3">
+                      <code>
+symbol = {Any FX/Crypto currency symbol} e.g: EUR,USD, JPY etc
+auth_key = AUTH_KEY
+                      </code>
+                    </pre>
+                      </div>
+                      <div class="">
+                        <div class="small-text">
+                          <b>Candle API by ID:</b>
+                          <pre
+                            class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/base?<span class="yellow">symbol</span>=<span class="off-white">USD</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                        </div>
+
+                        <p class="small-text">
+                          <b>Eligibility :</b>
+                          Users with standard and above subscription can access this endpoint.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="tab-stiky">
+                        <div class="">
+                          <b>Response:</b>
+                          <pre
+                            class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5 font-size-13"><code><span class="off-white">{</span><br>&nbsp;&nbsp;"prices"<span class="off-white">:&nbsp;{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"AUD"<span class="off-white">:&nbsp;</span><span class="yellow">"1.4886269"</span><span class="off-white">,</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"EUR"<span class="off-white">:&nbsp;</span><span class="yellow">"0.9472567"</span><span class="off-white">,</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"USD"<span class="off-white">:&nbsp;</span><span class="yellow">"1"</span><br>&nbsp;&nbsp;<span class="off-white">}</span><br>&nbsp;&nbsp;"update_time"<span class="off-white">:&nbsp;{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"AUD"<span class="off-white">:&nbsp;</span><span class="yellow">"1677493260"</span><span class="off-white">,</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"EUR"<span class="off-white">:&nbsp;</span><span class="yellow">"1677493200"</span><span class="off-white">,</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"USD"<span class="off-white">:&nbsp;</span><span class="yellow">"1677493200"</span><br>&nbsp;&nbsp;<span class="off-white">}</span><br><span class="off-white">}</span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="historicalprice" class="mb-5">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2 class="sub-heading">FX Historical Price API</h2>
+                      <p class="text">
+                        Elk Layer API provides you the historical data of the stock market whenever you need the
+                        information. You can access more than 100 currencies with the pairs of multiple stock exchange
+                        rates updates in real time with all supported symbols, all in one API Elk Layer. The old
+                        currencies data is available for all symbols from the year of 1995 in 1 day and the above time
+                        frame, 1 month, 5 month or the less historical data up to 6 months. You will find the historical
+                        data by appending a date (format YYYY-MM-DD) in API URL with the base URL and specify the period
+                        parameter values: {1m, 5m, 30m, 1h, 2h, 4h, 5h, 1d, 1w, and month}
+                      </p>
+                      <p class="text">
+                        <b>Accepted Parameters :</b>
+                      <pre class="small-text bg-dark py-2 px-3">
+id = {Any valid FX ID}
+symbol = {Any valid Fx symbol}
+period = {TimeFrame period} {1m,5m,15m,30m,1h,2h,4h,5h,1d,1w,month}
+from = {Date from} & To = {date to} (Use both at a time or ignore both for latest history)
+auth_key = AUTH_KEY
+                   </pre>
+                      </p>
+                      <p class="text">
+                        <b>Return Latest candles</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/history?<span class="yellow">id</span>=<span class="off-white">2176</span>&amp;<span class="yellow">period</span>=<span class="off-white">1h</span>&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p class="text">
+                        <b>History Between Specific Date {YYYY-MM-DD}</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/history<br>&nbsp; &nbsp;?<span class="yellow">symbol</span>=<span class="off-white">EUR/USD</span><br>&nbsp; &nbsp;&amp;<span class="yellow">period</span>=<span class="off-white">1d</span><br>&nbsp; &nbsp;&amp;<span class="yellow">from</span>=<span class="off-white">2024-01-01</span> OR <span class="off-white">1704067200</span><span class="comm"> // Unix format</span><br>&nbsp; &nbsp;&amp;<span class="yellow">to</span>=<span class="off-white">2024-07-08</span> OR <span class="off-white">1720396800</span> <br>&nbsp; &nbsp;&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p class="text">
+                        <b>Do not use FROM and TO parameter :</b> If you always need the latest history upto 900
+                        candles, then you must have to take care of From/To parameter, that should not be assigned and
+                        remove them from URL, Then it will work better,
+                        <span class="text-danger">With FROM and TO parameter it will take more time in response.</span>
+
+                      </p>
+                      <p>
+                        <b>Or Between Specific Date-Time</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/history?<span class="yellow">symbol</span>=EUR/USD&amp;<span class="yellow">period</span>=1d&amp;<span class="yellow">from</span>=2024-01-01T12:00&amp;<span class="yellow">to</span>=2024-07-08T12:00&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p>
+                        <b>Or Between Specific Date-Time</b>
+                      <pre
+                        class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5">https://elklayer.com/api/v1/history?<span class="yellow">symbol</span>=EUR/USD&amp;<span class="yellow">period</span>=1d&amp;<span class="yellow">from</span>=2024-01-01T12:00&amp;<span class="yellow">to</span>=2024-07-09T12:00&amp;<span class="yellow">auth_key</span>=<span class="off-white">AUTH_KEY</span></pre>
+                      </p>
+                      <p>
+                        <b>Eligibility :</b>Free users can't use "From/To" parameters.
+                      </p>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="tab-stiky">
+                        <p class="mb-2"><b>Response:</b></p>
+                        <pre
+                          class="bg-dark rounded py-2 px-3 code-print p-all-10 m-t-5 font-size-13"><code><span class="off-white">{</span><br>&nbsp;&nbsp;"o"<span class="off-white">:&nbsp;</span><span class="yellow">"0.9765"</span><span class="off-white">,</span><span class="comm"> // Open</span><br>&nbsp;&nbsp;"h"<span class="off-white">:&nbsp;</span><span class="yellow">"0.9806"</span><span class="off-white">,</span><span class="comm"> // High</span><br>&nbsp;&nbsp;"l"<span class="off-white">:&nbsp;</span><span class="yellow">"0.9765"</span><span class="off-white">,</span><span class="comm"> // Low</span><br>&nbsp;&nbsp;"c"<span class="off-white">:&nbsp;</span><span class="yellow">"0.9792"</span><span class="off-white">,</span><span class="comm"> // Close</span><br>&nbsp;&nbsp;"t"<span class="off-white">:&nbsp;</span><span class="yellow">1665712800000</span><span class="off-white">,</span><span class="comm"> // Time Unix Format (UTC)</span><br>&nbsp;&nbsp;"tm"<span class="off-white">:&nbsp;</span><span class="yellow">"2022-10-14 02:00:00"</span><span class="comm"> // Date Time (UTC)</span><br><span class="off-white">},<br>{</span>and 900 more historical candles...<span class="off-white">},</span></code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="footer-wrapper">
+              <div class="imag-wrapper mb-3">
+                <img class="img-fluid footer-logo" src="./assest/images/icons/logo.svg" alt="">
+              </div>
+              <p class="text">Elk Layer is a trusted API of the Forex industry with Real-time and accurate
+                historical data worldwide.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-wrapper mt-5">
+              <h5 class="footer-title">Docs & Help</h5><br>
+              <a href="Forex.html" class="text">Forex Doc API</a> <br>
+              <a href="Crypto.html" class="text">Crypto Doc API</a> <br>
+              <a href="Stock.html" class="text">Stock Doc API</a> <br>
+              <a href="Error.html" class="text">Code Base</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-wrapper mt-5">
+              <h5 class="footer-title">Get in Touch</h5> <br>
+              <a href="contact.html" class="text">Contact us</a> <br>
+              <a href="About.html" class="text">About us</a> <br>
+              <a href="Privacy.html" class="text">Privacy Policy</a> <br>
+              <a href="Terms.html" class="text">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
