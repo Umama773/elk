@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Cards with Filter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center">Product Cards with Price Filter</h2>
+
+    <!-- Filter Dropdown -->
+    <div class="text-center my-3">
+      <select id="priceFilter" class="form-select w-50 mx-auto" onchange="displayFilteredProducts()">
+        <option value="">Select Price Range</option>
+        <option value="below 200">Below $200</option>
+        <option value="200-500">$200 - $500</option>
+        <option value="above 500">Above $500</option>
+      </select>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="row" id="productContainer"></div>
+  </div>
+
+  <script>
+    const products = [
+      {
+        id: 1,
+        name: "Product No 1",
+        price: "$229",
+        imageurl: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1004&auto=format&fit=crop"
+      },
+      {
+        id: 2,
+        name: "Product No 2",
+        price: "$309",
+        imageurl: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1004&auto=format&fit=crop"
+      },
+      {
+        id: 3,
+        name: "Product No 3",
+        price: "$129",
+        imageurl: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1004&auto=format&fit=crop"
+      }
+    ];
+
+    const productContainer = document.getElementById('productContainer');
+
+    function displayFilteredProducts() {
+      const filterValue = document.getElementById('priceFilter').value;
+
+      const filteredProducts = products.filter(product => {
+        const price = parseFloat(product.price.replace('$', ''));
+
+        if (filterValue === "below 200") {
+          return price < 200;
+        } else if (filterValue === "200-500") {
+          return price >= 200 && price <= 500;
+        } else if (filterValue === "above 500") {
+          return price > 500;
+        }
+
+        return true; // Show all if no filter
+      });
+
+      showProducts(filteredProducts);
+    }
+
+    function showProducts(productList) {
+      productContainer.innerHTML = ''; // Clear previous cards
+
+      productList.forEach(item => {
+        const card = `
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="${item.imageurl}" class="card-img-top" alt="${item.name}">
+              <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text text-danger fw-bold">${item.price}</p>
+              </div>
+            </div>
+          </div>
+        `;
+        productContainer.innerHTML += card;
+      });
+    }
+
+    // Load all products initially
+    window.onload = () => showProducts(products);
+  </script>
+
+</body>
+</html>
